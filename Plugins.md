@@ -1,5 +1,5 @@
-Lista de Plugins úteis
------------------------
+Helpful plugins
+----------------
 
 - [Git] [1]
     * Git commands inside your sublime.

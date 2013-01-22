@@ -5,7 +5,7 @@ commands = [
     'sudo apt-get install ipython ipython3 python-tk python3-tk '
     'python-pip git git-core',
     'sudo pip install docutils pygments pep8 pyflakes virtualenv '
-    'virtualenvwrapper requests',
+    'virtualenvwrapper',
     'wget http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.1%'
     '20x64.tar.bz2',
     'tar -jxvf Sublime\ Text\ *',
@@ -44,7 +44,7 @@ def run(command):
 
 
 def install():
-    name = raw_input('Digite o nome de usuario do sistema')
+    name = raw_input('Digite o nome de usuario do sistema ')
     dir_path = os.getcwdu()
     if os.name == 'posix':
         for command in commands:
@@ -53,6 +53,7 @@ def install():
         for repository in repositories:
             run(repository)
         os.chdir(dir_path)
+        run('subl &')
         run('cp Preferences.sublime-settings ~/.config/sublime-text-2/'
             '/Packages/Default/')
         run('cp SublimeLinter.sublime-settings ~/.config/sublime-text-2/'

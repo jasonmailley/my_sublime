@@ -16,7 +16,7 @@ commands = [
     "echo 'source /usr/local/bin/virtualenvwrapper.sh' >> ~/.bashrc",
     "cp Preferences.sublime-settings ~/.config/sublime-text-2/"
     "Packages/Default/",
-    "cp Preferences.sublime-settings ~/.config/sublime-text-2/"
+    "cp SublimeLinter.sublime-settings ~/.config/sublime-text-2/"
     "Packages/User/"
 ]
 

@@ -17,6 +17,7 @@ echo export EDITOR="subl" >> ~/.bashrc
 
 
 ############################PLugins############################################
+echo 'Instalando PLugins...'
 cd ~/.config/sublime-text-2/Packages
 git clone https://github.com/buymeasoda/soda-theme/ "Theme - Soda"
 git clone https://github.com/kemayo/sublime-text-2-git.git
@@ -32,5 +33,6 @@ cd -
 
 
 ####################Configurações pessoais#####################################
+echo 'Configurações pessoais'
 cp Preferences.sublime-settings ~/.config/sublime-text-2/Packages/Default/
 cp SublimeLinter.sublime-settings ~/.config/sublime-text-2/Packages/User/

@@ -33,6 +33,7 @@ cd -
 
 
 ####################Configurações pessoais#####################################
+subl &
 echo 'Configurações pessoais'
 cp Preferences.sublime-settings ~/.config/sublime-text-2/Packages/Default/
 cp SublimeLinter.sublime-settings ~/.config/sublime-text-2/Packages/User/

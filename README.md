@@ -1,11 +1,12 @@
 MySublime
 =========
 
-This is my Sublime Text 2 configuration based on post of @kennethreitz ,and my
+This is my Sublime Text 2 configuration based on post of [@kennethreitz][kenneth] ,and my
 goal is try to optimize the python experience and better support
-to web2py[1].
+to [web2py][web2py].
 
-It's a compilation of better plugins tht include:
+It's a compilation of better plugins thats include:
+
     - git support(commands and diff view)
     - pep8 autoformat
     - html helper(awesome!)
@@ -37,3 +38,5 @@ TODO:
 
     [] Test script in earlier versions of python
 
+[web2py]: http://www.web2py.com
+[kenneth]: http://github.com/kennethreitz

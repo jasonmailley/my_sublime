@@ -27,7 +27,8 @@ repositories = [
     "git clone https://github.com/jisaacks/GitGutter.git",
     "git clone https://github.com/Kronuz/SublimeCodeIntel.git",
     "git clone https://github.com/SublimeLinter/SublimeLinter.git",
-    "git clone https://github.com/revolunet/sublimetext-markdown-preview.git",
+    "git clone https://github.com/revolunet/sublimetext-markdown-preview.git "
+    "Markdown\ Preview",
     "git clone https://github.com/dzhibas/SublimePrettyJson.git",
     "git clone https://github.com/martinsam/sublime-unittest.git",
     "git clone https://github.com/wistful/SublimeAutoPEP8.git AutoPEP8",

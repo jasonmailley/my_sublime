@@ -2,7 +2,7 @@ import os
 
 commands = [
     'sudo -v',
-    'sudo apt-get install ipython ipython3 python-tk python3-tk tk'
+    'sudo apt-get install ipython ipython3 python-tk python3-tk '
     'python-pip git git-core',
     'sudo pip install docutils pygments pep8 pyflakes virtualenv '
     'virtualenvwrapper requests',
@@ -12,12 +12,8 @@ commands = [
     'rm Sublime\ Text\ *.tar.bz2',
     'sudo mv  Sublime\ Text\ 2 /opt/sublime/',
     'sudo ln -s /opt/sublime/sublime_text /usr/bin/subl',
-    '''echo 'export EDITOR="subl"' >> ~/.bashrc' ''',
+    'echo export EDITOR="subl" >> ~/.bashrc',
     "echo 'source /usr/local/bin/virtualenvwrapper.sh' >> ~/.bashrc",
-    "cp Preferences.sublime-settings ~/.config/sublime-text-2/"
-    "Packages/Default/",
-    "cp SublimeLinter.sublime-settings ~/.config/sublime-text-2/"
-    "Packages/User/"
 ]
 
 repositories = [
@@ -48,13 +44,21 @@ def run(command):
 
 
 def install():
+    name = raw_input('Digite o nome de usuario do sistema')
     if os.name == 'posix':
         for command in commands:
             run(command)
-        run('cd ~/.config/sublime-text-2/Packages/')
+        os.chdir('/home' + name + '/.config/sublime-text-2/Packages')
         for repository in repositories:
             run(repository)
+        run("cp Preferences.sublime-settings ~/.config/sublime-text-2/"
+            "Packages/Default/")
+        run("cp SublimeLinter.sublime-settings ~/.config/sublime-text-2/"
+            "Packages/User/")
     else:
         print "Change your life.Use Linux!"
         return -1
     return 0
+
+if __name__ == '__main__':
+    install()

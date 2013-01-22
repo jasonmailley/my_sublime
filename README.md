@@ -14,11 +14,13 @@ It's a compilation of better plugins tht include:
     - nice snippets...very nice
     - json auto-formatter
 
-##Instalation
+Instalation
+-----------
 
 `python setup.py`
 
-##Requirements
+Requirements
+--------------
 - Python 2.7
 - Ubuntu (only support yet)
 

@@ -45,12 +45,18 @@ def run(command):
 
 def install():
     name = raw_input('Digite o nome de usuario do sistema')
+    dir_path = os.getcwdu()
     if os.name == 'posix':
         for command in commands:
             run(command)
         os.chdir('/home' + name + '/.config/sublime-text-2/Packages')
         for repository in repositories:
             run(repository)
+        os.chdir(dir_path)
+        run('cp Preferences.sublime-settings ~/.config/sublime-text-2/'
+            '/Packages/Default/')
+        run('cp SublimeLinter.sublime-settings ~/.config/sublime-text-2/'
+            'Packages/User/')
     else:
         print "Change your life.Use Linux!"
         return -1

@@ -51,10 +51,6 @@ def install():
         os.chdir('/home' + name + '/.config/sublime-text-2/Packages')
         for repository in repositories:
             run(repository)
-        run("cp Preferences.sublime-settings ~/.config/sublime-text-2/"
-            "Packages/Default/")
-        run("cp SublimeLinter.sublime-settings ~/.config/sublime-text-2/"
-            "Packages/User/")
     else:
         print "Change your life.Use Linux!"
         return -1

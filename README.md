@@ -29,11 +29,11 @@ enviroment
 
 TODO:
 
-    [ ] integration with other OS(include other distros).
+    [] integration with other OS(include other distros).
 
-    [ ] many snippets for web2py
+    [] many snippets for web2py
 
-    [ ] auto update plugins
+    [] auto update plugins
 
-    [ ] Test script in earlier versions of python
+    [] Test script in earlier versions of python
 

@@ -20,3 +20,8 @@ Ctrl + Shift + 8: PEP8 AutoFormat
 ---------------------------------
 
 Format the current file automatically in PEP8.
+
+Ctrl + Alt + j: Pretty JSON Format
+-----------------------------------
+
+Automatically format a json file.

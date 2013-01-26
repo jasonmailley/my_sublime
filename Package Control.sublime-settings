@@ -1,0 +1,16 @@
+{
+	"installed_packages":
+	[
+		"AutoPEP8",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"Markdown Preview",
+		"Package Control",
+		"Pretty JSON",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"Theme - Soda",
+		"Unittest (python)"
+	]
+}

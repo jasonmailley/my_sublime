@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "docutils",
+    "pep8",
+    "pyflakes",
+    "virtualenv",
+    "virtualenvwrapper",
+    "ipython"
+  ]
+}

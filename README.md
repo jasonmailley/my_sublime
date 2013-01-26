@@ -34,8 +34,6 @@ TODO:
 
     [] many snippets for web2py
 
-    [] auto update plugins
-
     [] Test script in earlier versions of python
 
 [web2py]: http://www.web2py.com

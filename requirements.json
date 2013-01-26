@@ -1,0 +1,7 @@
+{
+  "requirements": [
+    "python-tk",
+    "python-pip",
+    "git-core"
+  ]
+}

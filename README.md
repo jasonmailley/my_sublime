@@ -1,6 +1,8 @@
 MySublime
 =========
 
+stable version: 0.2
+
 This is my Sublime Text 2 configuration based on post of [@kennethreitz][kenneth] ,and my
 goal is try to optimize the python experience and better support
 to [web2py][web2py].
@@ -20,7 +22,7 @@ Instalation
 
 ##### 1 - Run the script:
 
-    `python setup.py` or `python setup.py --<commands> ... `
+` python setup.py ` or ` python setup.py --<commands> ...  `
 
 Commands:
 

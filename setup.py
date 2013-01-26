@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+from time import sleep
 
 USER = os.getlogin()
 
@@ -55,20 +56,20 @@ def install():
             os.system(
                 "echo 'source /usr/local/bin/virtualenvwrapper.sh' >> ~/.bashrc")
 
-            if '--extras' in sys.argv:
+            if not('--no_extras' in sys.argv):
                 install_distribution_packages(json.load(open('extras.json')))
                 install_pipy_packages(json.load(open('extra_packs.json')))
-
         run('subl &')
+        sleep(3)
         if not('--no_user_settings' in sys.argv):
-            run('cp Preferences.sublime-settings ~/.config/sublime-text-2/'
-                '/Packages/Default/')
+            run('cp Preferences.sublime-settings ~/.config/sublime-text-2'
+                '/Packages/User')
         run('cp SublimeLinter.sublime-settings ~/.config/sublime-text-2/'
             'Packages/User/')
-        run('cp Package Control.sublime-package ~/.config/sublime-text-2'
-            '/Installed Packages/')
-        run('cp Package Control.sublime-settings ~/.config/sublime-text-2/'
-            'Packages/User/')
+        run('cp Package\ Control.sublime-package ~/.config/sublime-text-2'
+            '/Installed\ Packages')
+        run('cp Package\ Control.sublime-settings ~/.config/sublime-text-2/'
+            'Packages/User')
     else:
         print "Change your life.Use Linux!"
         return -1

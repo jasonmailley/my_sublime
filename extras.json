@@ -1,5 +1,6 @@
 {
   "extras": [
-    "python3-tk"
+    "python3-tk",
+    "ipython3"
   ]
 }

@@ -90,14 +90,14 @@ def main(arguments):
         install_sublime(sublime_commands)
 
     if not arguments['--no_env']:
-            install_distribution_packages(json.load(open('requirements.json')))
-            install_pipy_packages(json.load(open('packs.json')))
+            install_distribution_packages(json.load(open('enviroment.json')))
+            install_pipy_packages(json.load(open('packages.json')))
             os.system(
                 "echo 'source /usr/local/bin/virtualenvwrapper.sh' "
                 ">> ~/.bashrc")
 
     if not arguments['--no_extras']:
-                install_distribution_packages(json.load(open('extras.json')))
+                install_distribution_packages(json.load(open('extra_envs.json')))
                 install_pipy_packages(json.load(open('extra_packs.json')))
 
     run('subl &')

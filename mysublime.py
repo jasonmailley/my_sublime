@@ -11,8 +11,8 @@ to web2py and other frameworks.
 
 Usage:
     mysublime.py [options] ...
-    mysublime --version [--args]
-    mysublime -h | --help [--args]
+    mysublime.py --version
+    mysublime.py -h | --help
 
 
 Options:

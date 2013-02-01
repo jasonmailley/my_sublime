@@ -1,11 +1,9 @@
 MySublime
 =========
 
-stable version: 0.2
-
 This is my Sublime Text 2 configuration based on post of [@kennethreitz][kenneth] ,and my
 goal is try to optimize the python experience and better support
-to [web2py][web2py].
+to [web2py][web2py] and other frameworks.
 
 It's a compilation of better plugins thats include:
 
@@ -22,17 +20,27 @@ Instalation
 
 ##### 1 - Run the script:
 
-` python setup.py ` or ` python setup.py --<commands> ...  `
+Usage:
 
-Commands:
+    mysublime.py [--no_sublime] [--no_enviroment] [--no_extras] [-- no_user_settings]
+    mysublime.py -h | --help
+    mysublime.py --version
 
-     --no_sublime - ignore the installation of Sublime Text 2
 
-     --no_enviroment - ignore the installation of enviroment packages(not recommended because maybe necessary for plugins)
+Options:
 
-     --no_extras - ignore the instalattion of extra packages
+    -h --help Show this screen.
 
-     --no_user_settings - ignore personal configurations
+    --version Show version.
+
+    --no_sublime - ignore the installation of Sublime Text 2
+
+    --no_enviroment - ignore the installation of enviroment packages(not recommended because maybe necessary for plugins)
+
+    --no_extras - ignore the instalattion of extra packages
+
+    --no_user_settings - ignore personal configurations
+
 
 ##### 2 - Reset the opened Sublime Text.
 
@@ -55,7 +63,14 @@ Preferences -> Settings - User
 Requirements
 --------------
 - Python 2.7
-- Ubuntu (only support yet)
+- Ubuntu and Crunchbang 'Waldorf' (only support yet)
+
+Know problems
+-------------
+
+- Markdown Preview in a browser doesn't works in Crunchbang.
+    Add this line in your .bashrc export BROWSER='/usr/bin/iceweasel'
+    This is a temporary and not full solution.
 
 
 TODO:
@@ -66,7 +81,7 @@ TODO:
 
     [] Test script in earlier versions of python
 
-    [] Better setup interface with docopt
+    [x] Better setup interface with docopt
 
     [] Screenshots
 

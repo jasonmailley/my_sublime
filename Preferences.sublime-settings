@@ -1,14 +1,5 @@
 //Personal configurations
 {
-    // Sets the colors used within the text area
-    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-    // Note that the font_face and font_size are overriden in the platform
-    // specific settings file, for example, "Preferences (Linux).sublime-settings".
-    // Because of this, setting them here will have no effect: you must set them
-    // in your User File Preferences.
-    "font_face": "Ubuntu Mono",
-    "font_size": 13.0,
-
     // Valid options are "no_bold", "no_italic", "no_antialias", "gray_antialias",
     // "subpixel_antialias", "no_round" (OS X only) and "directwrite" (Windows only)
     "font_options": ["subpixel_antialias"],

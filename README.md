@@ -1,7 +1,7 @@
 MySublime
 =========
 
-This is my Sublime Text 2 configuration based on post of [@kennethreitz][kenneth] ,and my
+This is my Sublime Text 2 configuration based on post of [@kennethreitz][kenneth], and my
 goal is try to optimize the python experience and better support
 to [web2py][web2py] and other frameworks.
 
@@ -22,7 +22,7 @@ Instalation
 
 Usage:
 
-    mysublime.py [--no_sublime] [--no_enviroment] [--no_extras] [-- no_user_settings]
+    mysublime.py [--no_sublime] [--no_enviroment] [--no_extras] [--no_user_settings]
     mysublime.py -h | --help
     mysublime.py --version
 
@@ -44,11 +44,11 @@ Options:
 
 ##### 2 - Reset the opened Sublime Text.
 
-    Just close and open.
+    Just close and reopen.
 
 ##### 3 - Wait appear a V8 successful message in the status bar.
 
-    Wait the installation of the plguins.(This can take some minutes)
+    Wait for the installation of the plguins.(This can take some minutes)
 
 ##### 4(extra) - Theme Soda
 
@@ -68,8 +68,8 @@ Requirements
 Know problems
 -------------
 
-- Markdown Preview in a browser doesn't works in Crunchbang.
-    Add this line in your .bashrc export BROWSER='/usr/bin/iceweasel'
+- Markdown Preview in a browser doesn't work in Crunchbang.
+    Add this line in your .bashrc export `BROWSER='/usr/bin/iceweasel'`
     This is a temporary and not full solution.
 
 

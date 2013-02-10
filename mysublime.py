@@ -97,7 +97,7 @@ def main(arguments):
                 ">> ~/.bashrc")
 
     if not arguments['--no_extras']:
-                install_distribution_packages(json.load(open('extra_envs.json')))
+                install_distribution_packages(json.load(open('extra_env.json')))
                 install_pipy_packages(json.load(open('extra_packs.json')))
 
     run('subl &')

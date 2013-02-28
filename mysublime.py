@@ -117,5 +117,5 @@ def main(arguments):
 
 #Start
 if __name__ == '__main__':
-    arguments = docopt(__doc__, version='mysublime 0.3')
+    arguments = docopt(__doc__, version='mysublime 0.4')
     main(arguments)
